@@ -1,25 +1,38 @@
-// Aspect ratio detection and layout switching
-function checkAspectRatio() {
-    const container = document.querySelector('.container');
-    const aspectRatio = window.innerWidth / window.innerHeight;
+// iOS 9.3.3 compatible layout switcher
+function checkLayout() {
+    var container = document.querySelector('.container');
+    var buttons = document.querySelectorAll('.modern-button');
+    var buttonWidth = 160; // px
+    var gap = 16; // px
     
-    // Switch to vertical layout if portrait orientation (aspect ratio < 1)
-    // or if very narrow screen (aspect ratio < 0.85)
-    if (aspectRatio < 0.65) {
-        container.classList.add('vertical-layout');
+    // Old-school width calculation for iOS 9
+    var containerWidth = container.offsetWidth - 30; // account for padding
+    
+    // Switch to vertical if buttons would overlap
+    if (containerWidth < (buttonWidth * 2 + gap)) {
+        container.className += ' vertical-layout';
+        // iOS 9 compatible margin centering
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].style.margin = '0 auto 15px';
+            buttons[i].style.width = '80%';
+            buttons[i].style.maxWidth = '200px';
+        }
     } else {
-        container.classList.remove('vertical-layout');
+        container.className = container.className.replace(' vertical-layout', '');
+        // Reset to horizontal layout
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].style.margin = '';
+            buttons[i].style.width = '';
+            buttons[i].style.maxWidth = '';
+        }
     }
 }
 
-// Initial check
-checkAspectRatio();
+// Old-school event listeners for iOS 9
+window.onload = checkLayout;
+window.onresize = checkLayout;
 
-// Update on resize or orientation change
-window.addEventListener('resize', checkAspectRatio);
-window.addEventListener('orientationchange', checkAspectRatio);
-
-// Copy functionality
-document.querySelector('.copy-button').addEventListener('click', () => {
-    navigator.clipboard.writeText('https://manguy-legend.github.io/cydia/');
-});
+// Basic copy function
+document.querySelector('.copy-button').onclick = function() {
+    prompt('Copy this URL:', 'https://manguy-legend.github.io/cydia/');
+};
