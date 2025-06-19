@@ -27,7 +27,7 @@ async function copyUrl(url) {
     success = document.execCommand('copy');
   } catch (err) {
     console.warn('execCommand copy failed', err);
-    success = false;
+    success = false; 
   }
   document.body.removeChild(textarea);
 
