@@ -167,19 +167,5 @@ html, body {
     align-items: center;
     justify-content: center;
     transition: transform 0.2s ease;
-}
-    
-    .button-row {
-        flex-direction: column;
-        gap: 12px;
-    }
-    
-    .modern-button {
-        width: 100%;
-        height: 45px;
-    }
-    
-    .button-text {
-        padding-right: 28px; /* Balance icon space */
     }
 }
