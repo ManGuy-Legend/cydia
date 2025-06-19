@@ -1,8 +1,8 @@
-/* DARK THEME STYLES */
+/* FINAL REFINED DARK THEME */
 body {
-    font-family: 'Inter', sans-serif;
-    background-color: #121212; /* Dark background */
-    color: #e0e0e0; /* Light text */
+    font-family: -apple-system-font, BlinkMacSystemFont, Inter, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,79 +12,100 @@ body {
 }
 
 .container {
-    background: #1e1e1e; /* Dark container */
+    background: #1e1e1e;
     border-radius: 16px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3); /* Deeper shadow */
-    padding: 40px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    padding: 30px;
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     text-align: center;
-    border: 1px solid #333; /* Subtle border */
+    border: 1px solid #333;
 }
 
 .title {
     font-size: 28px;
     font-weight: 700;
-    color: #ffffff; /* Bright white for title */
+    color: #ffffff;
     margin-bottom: 30px;
 }
 
-.button-group {
+.button-row {
     display: flex;
-    flex-direction: column;
-    gap: 12px;
-    margin-bottom: 24px;
+    justify-content: space-around;
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
 .modern-button {
-    background: #2d2d2d; /* Dark button */
-    border: 1px solid #444; /* Slightly lighter border */
+    background: #2d2d2d;
+    border: 1px solid #444;
     border-radius: 12px;
-    padding: 14px 20px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #ffffff; /* White text */
+    padding: 15px 5px;
+    width: 45%;
+    aspect-ratio: 1.1;
+    font-size: 14px;
+    color: #ffffff;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .modern-button:hover {
-    background: #3a3a3a; /* Slightly lighter on hover */
-    border-color: #555;
-    transform: translateY(-1px);
+    background: #3a3a3a;
+    transform: translateY(-3px);
+}
+
+.app-icon {
+    width: 40px;
+    height: 40px;
+    background: #3a3a3a;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #555;
+}
+
+.button-text {
+    margin-top: auto;
+    padding-bottom: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
 }
 
 .url-container {
     display: flex;
     align-items: center;
-    gap: 10px;
-    background: #252525; /* Darker background for URL */
+    background: #252525;
     border-radius: 12px;
-    padding: 14px 18px;
+    padding: 12px 15px;
     border: 1px solid #333;
 }
 
 .url-display {
     flex: 1;
     font-size: 14px;
-    color: #a0a0a0; /* Light gray for URL */
+    color: #a0a0a0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    text-align: left;
+    padding-right: 10px;
 }
 
 .copy-button {
-    background: #3a3a3a; /* Dark button */
+    background: #3a3a3a;
     color: white;
     border: none;
     border-radius: 8px;
     padding: 8px 16px;
     font-size: 14px;
-    font-weight: 600;
+    font-weight: normal; /* Removed bold */
     cursor: pointer;
-    transition: background 0.2s ease;
+    transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .copy-button:hover {
-    background: #4a4a4a; /* Slightly lighter on hover */
+    background: #4a4a4a; /* Simple dark gray hover */
+    transform: translateY(-1px);
 }
