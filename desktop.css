@@ -138,11 +138,14 @@ html, body {
     cursor: pointer;
     width: 30px;
     height: 30px;
-    margin-right: -10px;
+    left: -5px;
+    margin-right: -60px;
     display: flex;
+    position:relative;
     align-items: center;
     justify-content: center;
     transition: transform 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .copy-button:hover {
