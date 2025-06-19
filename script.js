@@ -22,7 +22,7 @@ function tryFallbackCopy(text, resolve) {
     textarea.style.opacity = 0;
     textarea.style.left = '-9999px';
     textarea.setAttribute('readonly', '');
-    
+     
     document.body.appendChild(textarea);
     
     try {
