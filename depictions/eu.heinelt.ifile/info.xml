@@ -1,0 +1,51 @@
+<package>
+	<id>eu.heinelt.ifile</id>
+	<name>iFile</name>
+	<version>1.0.0-1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>5.0</miniOS>
+			<maxiOS>10</maxiOS>
+			<otherVersions>unsupported</otherVersions>
+			<!--
+			for otherVersions, you can put either unsupported or unconfirmed
+			-->
+		</firmware>
+	</compatibility>
+	<dependencies>file-cmds, zip, unzip, p7zip, gzip, bzip2, unrar, diskdev-cmds</dependencies>
+	<descriptionlist>
+		<description>For iPhone, iPod touch, and iPad.
+
+iFile is a complete file manager and viewer running under user root. iFile gives you full access to your jailbroken device's files, like Finder does on your desktop Mac. iFile is your tool for advanced management and customization of files on your device.
+
+iFile allows fast navigation through the iPhone file system in multiple tabs. You can directly view files of many types, including images, movies, sound, text, HTML, web archives, Microsoft and Apple iWork files, PDFs, and compressed formats.
+
+iFile lets you handle software files and multimedia in flexible ways, including:
+
+Copy, paste, rename, and move files.
+Edit text files and property lists, such as configuration files.
+Install .deb software packages.
+Pack and unpack ZIPs and other compressed files.
+Import mp3s and other files into your iPod library (using Gremlin2 on iOS 4.x).
+iFile also provides easy ways to get files in and out of your device:
+Upload and download files from iFile's built-in web server via a web browser or connecting to it as a network drive (WebDAV).
+Manage, copy, and move files in your Dropbox, box or FTP account.
+Show and download your files from a Toshiba FlashAir® card.
+Send files as email attachments.
+Mount Apple disk image (DMG) files.
+Send files to iFile on other iDevices via Bluetooth
+Integrates with AttachmentSaver, Safari Download Manager, and Celeste Bluetooth File Sharing.
+
+iFile has a free version with basic features. For complete features listed above, you can purchase a license.
+
+
+ 
+ 
+See larger Screenshots below</description>
+	</descriptionlist>
+	<screenshots></screenshots>
+	<changelog>
+		<change>Pirated!</change>
+	</changelog>
+	<links></links>
+</package>
