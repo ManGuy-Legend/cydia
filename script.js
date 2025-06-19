@@ -1,11 +1,27 @@
 async function copyUrl(url) {
+  // Function to detect iOS version
+  function getIOSVersion() {
+    const ua = navigator.userAgent;
+    const match = ua.match(/OS (\d+)_/);
+    return match ? parseInt(match[1], 10) : null;
+  }
+
+  // Check if the device is iOS and get the version
+  const iosVersion = getIOSVersion();
+  
+  // If iOS version is less than 10, use prompt
+  if (iosVersion !== null && iosVersion < 10) {
+    prompt('Copy this URL manually:', url);
+    return false;
+  }
+
   // Modern Clipboard API (iOS 12+, desktop, Android)
   if (navigator.clipboard && navigator.clipboard.writeText) {
     try {
       await navigator.clipboard.writeText(url);
       return true;
     } catch (e) {
-      // fallback to execCommand
+      console.warn('Clipboard API failed:', e);
     }
   }
 
@@ -31,7 +47,7 @@ async function copyUrl(url) {
   }
   document.body.removeChild(textarea);
 
-  // Prompt fallback for iOS ≤9.3.3 and older unsupported cases
+  // Prompt fallback for unsupported cases
   if (!success) {
     prompt('Copy this URL manually:', url);
   }
