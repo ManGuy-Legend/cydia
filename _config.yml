@@ -1,1 +1,2 @@
-include: ["/cydia/index.html"]
+include: ["index.html"]  
+exclude: ["debs", "depictions", "Packages*", "Release"] 
