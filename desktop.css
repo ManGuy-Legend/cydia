@@ -27,7 +27,6 @@ html, body {
     border-radius: 16px;
     border: 1px solid #333;
     padding: 30px;
-    width: calc(18% - 40px);
     height: 300px;
     max-width: 400px;
     box-shadow: 0 8px 32px rgba(0,0,0,0.3);
@@ -118,7 +117,7 @@ html, body {
     width: 200px;
     border: 1px solid #333;
     height: 45px;
-    left: 4px;
+    left: 0px;
     position: relative;
     top: 45px;
 }
@@ -147,25 +146,4 @@ html, body {
 
 .copy-button:hover {
     transform: scale(1.1);
-}
-
-/* Mobile Layout */
-@media (hover: none) and (pointer: coarse) {
-    .container {
-        max-width: 320px;
-        padding: 20px;
-        margin: 10px;
-    }
-
-    .copy-button {
-    background: transparent;
-    border: none;
-    width: 90px;
-    height: 90px;
-    margin-right: -10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: transform 0.2s ease;
-    }
 }
