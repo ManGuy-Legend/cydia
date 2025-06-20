@@ -1,3 +1,19 @@
+Package: com.repo.xarold.com.cydown
+Version: 6.0.6
+Architecture: iphoneos-arm
+Depends: cydia (>= 1.1.23), mobilesubstrate, preferenceloader, firmware (<< 8.3) | ldid (>= 1:1.2.1), coreutils-bin, coreutils, apt7
+Filename: ./debs/cydown.deb
+Size: 439608
+MD5sum: 7dd1366985146dd61f38c9fda0791a02
+SHA1: 241502e218f58c52473b131caf3fb7d5884eeadb
+SHA256: 3f8fca4b8e984dcb7e25fe1ca61ac5e58349be8ef18205c5744de40c246dc5c5
+Section: Tweaks
+Description: Install paid packages for Free in Cydia!
+Author: julioverne
+Depiction: http://repo.xarold.com/depiction.php?id=cydown
+Icon: file:///Library/PreferenceBundles/CyDownSettings.bundle/CyDown@2x.png
+Name: CyDown
+
 Package: eu.heinelt.ifile
 Version: 2.2.0-1
 Architecture: iphoneos-arm
