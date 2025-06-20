@@ -4,7 +4,7 @@ Architecture: iphoneos-arm
 Maintainer: Carsten Heinelt <ifile@iphone.heinelt.eu>
 Installed-Size: 20224
 Depends: file-cmds, zip, unzip, p7zip, gzip, bzip2, unrar, diskdev-cmds
-Filename: ./debs/eu.heinelt.ifile.deb
+Filename: ./debs/ifile.deb
 Size: 9751882
 MD5sum: 88766f339cc7b150e356331e4594db7b
 SHA1: 3ff2ab2d71d013510c2d7946165719757878a613
